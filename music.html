@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Music</title>
+    <link rel="stylesheet" type="text/css" href="css/tplayer.css" />
+	<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Plugins/FontAwesome4.1/css/font-awesome.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/tPlayer.js"></script>
+</head>
+<body>
+	<!--HEADER -->
+	<div class="header">
+  <div class="for-sticky">
+	<!--LOGO-->
+	<div class="col-md-2 col-xs-6 logo">
+	  <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+	</div>
+	<!--/.LOGO END-->
+  </div>
+	  
+	</div>
+	<!--/.HEADER END-->
+    <div id="t_wrapper">
+        <div id="t_cover">
+        	<img src="Images/logo1.png">
+        </div>
+    	<div id="t_top">
+    		<div id="t_title_info">
+    			<span class="artist"></span>
+    			<span class="title"></span>
+    		</div>
+    	</div>
+    	<div id="t_middle">
+    		<div id="play"></div>
+    		<div id="pause" class="hidden">
+    		</div>
+    		<div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="t_progress">
+                <div id="trackInfo">
+                    <div id="error">
+    				</div>
+                    <div id="current">0:00</div>
+                    <div id="duration">0:00</div>
+    			</div>
+    			<div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div>
+            	<span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+            </div>
+    		<span id="prev"></span>
+            <span id="next"></span>
+    	</div>
+    	<div id="t_bottom">
+            <div id="range">
+                <div id="val"></div>
+                <div id="vol"></div>
+                <div id="rangeVal"></div>
+            </div>
+            <div id="t_pls_show" class="noselectpls"></div>
+    	</div>
+    </div>
+    <div id="playlist">
+        <ul>
+
+            <li t_cover="Moby.jpg" t_artist="谭嘉仪" t_name="小幸运">
+            	<a href="#">谭嘉仪 - 小幸运</a>
+                <audio preload="none">
+                    <source src="Media/x.mp3" type="audio/mp3">
+                   
+                </audio>
+            </li>
+          
+        </ul>
+    </div>
+
+</body>
+</html>
